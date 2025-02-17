@@ -1,4 +1,4 @@
-package mypack;
+package MyPackage;
 
 public class Mypackagesclass {
     
