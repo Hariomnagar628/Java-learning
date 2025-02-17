@@ -13,7 +13,7 @@ public class Empty {
             System.out.println("string is not empty");
         }
 
-
+ 
          if(name1.isBlank())
          {
             System.out.println("blank");
