@@ -1,7 +1,7 @@
 // Function(Method) overloading -> The functoin have the same name but different in arguments. if the function have same name but diffrent in return type then  it is not a Function OverLoading Ex.--> void greet(); , int greet(); . 
 
 
-package OOPs;
+package OOPs1;
 
 public class MethodOverLoading {
     

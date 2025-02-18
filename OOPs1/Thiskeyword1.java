@@ -1,4 +1,4 @@
-package OOPs;
+package OOPs1;
 
 // 1. Referring to Instance Variables
 // this keyword is used to refer to the current object inside a method or a   constructor.
