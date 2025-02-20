@@ -1,5 +1,5 @@
 import java.util.*;
-public class even{
+public class Even{
     public static void main(String[] args) {
          Scanner input = new Scanner(System.in);
        int x = input.nextInt();

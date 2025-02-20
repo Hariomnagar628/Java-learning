@@ -1,7 +1,5 @@
 package OOPs2.Overriding;
 
-
-
 public class Child  extends Parent{
     
     void walk()
@@ -16,7 +14,6 @@ public class Child  extends Parent{
         Child obj = new Child();
         obj.walk();
 
-        Parent obj1 = new Parent();
-        obj1.walk();
+       
     }
 }

@@ -1,6 +1,6 @@
 import java.util.HashSet;
 
-public class Practice {
+public class Duplicatesonarray {
 
     public static void main(String[] args) {
          
