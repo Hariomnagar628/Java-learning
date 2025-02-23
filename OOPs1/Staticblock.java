@@ -1,7 +1,4 @@
 package OOPs1;
-
-
-
 class block{
 
 static int a = 23;
