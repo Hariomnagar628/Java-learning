@@ -15,6 +15,9 @@ public class Class {
         d2.bark();
         d2.walk();
     
+        boolean value = d2 instanceof Dog;
+
+        System.out.println(value);
 
     }
 }
