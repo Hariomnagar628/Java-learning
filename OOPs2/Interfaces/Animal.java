@@ -21,7 +21,7 @@ public interface Animal {
     {
         this.eat();
         System.out.println("Animal is   running");
-        this.eat();
+     
     }
-    
+        
 } 
