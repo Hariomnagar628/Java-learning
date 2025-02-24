@@ -1,4 +1,4 @@
-package OOPs2.Inhertance;
+package OOPs2.Inheritance;
 
 public class Car  extends Vehical{
     
