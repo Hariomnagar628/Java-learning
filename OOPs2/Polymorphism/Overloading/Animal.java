@@ -7,7 +7,7 @@ public class Animal {
     {
         System.out.println("animal are eat");
     }
-
+    
     public void eat(String name)
     {
            System.out.println(name+"are eat");
