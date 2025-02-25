@@ -9,3 +9,4 @@ public class Abstract1 {
         myobj.study();
     }
 }
+    

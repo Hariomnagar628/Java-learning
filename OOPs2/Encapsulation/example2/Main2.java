@@ -1,5 +1,14 @@
 package OOPs2.Encapsulation.example2;
 
+
+// Data hiding is a way of restricting the access of our data members by hiding the implementation details. Encapsulation also provides a way for data hiding.
+
+// We can use access modifiers to achieve data hiding. For example,
+
+// Example 2: Data hiding using the private specifier
+
+
+
 class person{
 
     private int age;
