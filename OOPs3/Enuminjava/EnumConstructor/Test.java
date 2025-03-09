@@ -16,7 +16,7 @@ enum Size{
      LARGE("THE PIZZA IS LARGE"),;     
 
 
-
+     
     private final String pizzasize;
 
     private Size(String pizzasize)
@@ -46,6 +46,6 @@ public class Test {
         
         Size size = Size.SMALL;
         System.out.println(size.getsize());
+
     }
-    
 }
