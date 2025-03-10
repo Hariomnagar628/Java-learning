@@ -23,7 +23,7 @@ public class Linked_List {
 
 
         linkedlist.getFirst();
-        linkedlist.getLast();
+        linkedlist.getLast();   
 
         // linkedlist.removeIf(x->x%2==0);
 
