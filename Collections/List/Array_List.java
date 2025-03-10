@@ -59,8 +59,8 @@ public class Array_List {
 
          Collections.sort(arraylist1);
 
-         //sorting 
-         arraylist1.sort(null);
+         //sorting  in decanding order (a,b)->b-a using lambda expresion 
+         arraylist1.sort((a,b)->b-a);
 
          System.out.println(arraylist1);
 
