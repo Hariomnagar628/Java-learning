@@ -6,7 +6,11 @@ public class  Baseexception {
         
 
         try{
-            int []arr = new int[10];
+           
+            int [] arr = new int[10];
+
+            //  arr[10]=23;
+
 
             
             int number = 100/0;

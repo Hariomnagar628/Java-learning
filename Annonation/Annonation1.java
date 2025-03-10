@@ -12,7 +12,7 @@ class function
 
 class newfunction extends function{
 
-    //   @Override
+       @Override
     public void hello()
     {
         System.out.println("Inside newfunction class");
