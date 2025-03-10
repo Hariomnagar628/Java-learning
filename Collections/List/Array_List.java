@@ -48,6 +48,19 @@ public class Array_List {
           //      System.out.println(i);
           //   }
 
+           
+          
+
+
+         System.out.println(arraylist1);
+
+         
+         //Sorting the Arraylist
+
+         Collections.sort(arraylist1);
+
+         //sorting 
+         arraylist1.sort(null);
 
          System.out.println(arraylist1);
 
