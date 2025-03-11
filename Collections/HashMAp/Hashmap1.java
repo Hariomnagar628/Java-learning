@@ -4,6 +4,8 @@ import java.security.KeyStore.Entry;
 import java.util.HashMap;
 
 
+// In hashmap order does not mentain.
+
 public class Hashmap1 {
     
 public static void main(String[] args) {
@@ -52,6 +54,16 @@ public static void main(String[] args) {
         System.out.print(entry);
         System.out.print(",");
      }
+
+
+     // Anotherway of iterate
+
+    //  for(java.util.Map.Entry<String, Integer> entry:hashmap.entrySet())
+    //  {
+    //      System.out.println(entry.getKey()+":"+entry.getValue());
+
+    //  }
+
 
 
 }
