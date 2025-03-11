@@ -25,6 +25,8 @@ linkedlist.add(65);
 
 Vector<Integer> newvector = new Vector<>(linkedlist);
 
+
+// remove all elements 
 newvector.clear();
 
 System.out.println(newvector);
