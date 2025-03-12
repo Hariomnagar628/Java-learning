@@ -1,0 +1,60 @@
+🔐 What does synchronized mean in Java?
+
+Synchronized means "only one thread can access a block of code or method at a time."
+It's used to make your code thread-safe in a multi-threaded environment (like when two or more threads are running at the same time).
+
+
+
+
+
+
+💡 Why use synchronized?
+
+To prevent two threads from modifying shared data at the same time — which can lead to unexpected or wrong results (this is called a race condition).
+
+
+
+✅ Example 1: Synchronized Method
+
+public class Counter {
+    int count = 0;
+
+    public synchronized void increment() {
+        count++;
+    }
+}
+
+
+➡ Only one thread can run the increment() method at a time.
+
+
+✅ Example 2: Synchronized Block
+public class Counter {
+    int count = 0;
+
+    public void increment() {
+        synchronized(this) {
+            count++;
+        }
+    }
+}
+
+
+
+
+➡ Same effect as synchronized method — but gives you more control (you can synchronize only part of your code).
+
+
+
+🧠 Think of it like:
+Imagine you have one pen on a desk. If multiple people (threads) want to use it, you say:
+
+“One person at a time can use the pen” → that's synchronized behavior.
+
+
+
+
+⚠️ Important Notes:
+synchronized can slow down performance if overused.
+synchronized ensures mutual exclusion (only one thread inside at a time).
+It's used in multi-threading concepts like Runnable, Thread, ExecutorService.
