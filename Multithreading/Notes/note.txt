@@ -1,0 +1,79 @@
+
+A thread is a lightweight sub-process, a smallest unit of processing.
+
+
+
+
+
+Thread LifeCycle
+NEW → RUNNABLE → RUNNING → BLOCKED/WAITING → TERMINATED
+
+NEW: Thread created but not started.
+RUNNABLE: Ready to run, waiting for CPU.
+RUNNING: Currently executing.
+BLOCKED/WAITING: Waiting for some resource or signal.
+TERMINATED: Execution finished.
+
+
+
+
+
+
+Multithreading is a programming concept where multiple threads (smaller units of a process) run concurrently to perform different tasks at the same time.
+
+🔍 In simple words:
+Imagine your computer is cooking, washing dishes, and vacuuming — all at the same time. Each task is a thread, and all threads belong to one main program (process).
+
+
+
+💡 Why use multithreading?
+To make programs faster and more efficient.
+To perform multiple tasks simultaneously.
+To improve performance, especially on multi-core processors.
+
+
+
+📌 Real-life examples:
+A web browser: One thread loads the page, another plays music, another handles user input.
+
+
+
+A game: One thread handles graphics, one for user input, one for sound, etc.
+
+
+🧠 In Java:
+Java has built-in support for multithreading using the Thread class or implementing Runnable interface.
+
+
+
+
+Example:
+
+class MyThread extends Thread {|
+    public void run() {
+        System.out.println("This thread is running...");
+    }
+}
+
+
+public class Main {
+    public static void main(String[] args) {
+        MyThread t1 = new MyThread();
+        t1.start();  // Starts a new thread
+        System.out.println("Main thread is running...");
+    }
+}
+
+
+
+
+📝 Key terms:
+Thread: Smallest unit of execution.
+Process: A running program (can have multiple threads).
+Concurrency: Multiple tasks progress at the same time.
+Parallelism: Tasks actually run at the same time (true multitasking).
+
+
+
+when java program Starts, one thread begin running imediately, which is called the main thread.This thread is responsible for executing the main method of a program.
+
