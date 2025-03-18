@@ -1,0 +1,54 @@
+In a multithreading enviornment, threads often need to communicate and coordinate with each other to accomplish a task.
+
+
+
+🔄 What is Thread Communication?
+Thread communication means threads working together and sharing data, without causing conflicts.
+
+In Java, multiple threads can run in parallel, but sometimes:
+
+1. One thread must wait for another to finish a task.
+2. Threads need to share a resource (e.g., a counter, object, file).
+3. Threads must coordinate their actions to avoid errors like race conditions.
+➡️ So, thread communication is how we coordinate multiple threads safely.
+
+
+...................................................................................................
+
+📚 Example Scenario:
+
+Imagine this simple case:
+
+1.One thread produces data (Producer).
+2.Another thread consumes that data (Consumer).
+
+Both must coordinate:
+
+1. Producer should not produce if buffer is full.
+2. Consumer should not consume if buffer is empty.
+That’s thread communication in action.
+
+...................................................................................................
+
+🛠️ How Thread Communication Works in Java
+Java provides three core methods for communication:
+
+1.wait()
+2.notify()
+3.notifyAll()
+These are used inside synchronized blocks or methods only.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+...................................................................................................

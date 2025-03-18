@@ -1,0 +1,55 @@
+
+What is Executor Framework?
+
+The Executor Framework in Java is part of java.util.concurrent package. It provides a high-level API for managing threads and tasks, making it easier to manage multithreading compared to using Thread or Runnable directly.
+...................................................................................................
+
+✅ Why use Executor Framework?
+
+1.Easier thread management
+2.Reuse of threads from a thread pool (no need to create a new thread every time)
+3.Better control over task execution
+4.Can manage multiple tasks efficiently
+...................................................................................................
+
+📤 Methods in ExecutorService:
+1.submit() – to submit tasks
+2.shutdown() – stops accepting new tasks
+3.shutdownNow() – forcibly stops all tasks
+4.awaitTermination() – wait for all tasks to finish
+5.invokeAll() / invokeAny() – execute multiple tasks
+
+...................................................................................................
+
+✅ Why We Use Executor Framework in Java:
+
+1. Better Thread Management
+
+   You don’t need to manually create or manage Thread objects.
+   Threads are reused from a pool, which improves performance and saves memory.
+
+2. Improves Performance
+
+   Creating new threads for every task is expensive. Executor reuses existing threads.
+   Thread Pooling reduces overhead.
+
+3.Scalability
+ 
+ It handles multiple tasks concurrently.
+ You can control the maximum number of threads, preventing resource overuse.
+
+4.Simpler Code
+  
+  Instead of writing boilerplate thread creation code, you just call submit() or execute().
+ 
+5. Graceful Shutdown
+  
+   You can properly stop task execution using shutdown() or shutdownNow() methods.
+
+6. Task Scheduling
+  
+   With ScheduledExecutorService, you can run tasks after a delay or at fixed intervals (like cron jobs).
+
+7. Advanced Features
+  
+   You can submit Callable tasks, get results via Future, cancel tasks, or handle exceptions properly.

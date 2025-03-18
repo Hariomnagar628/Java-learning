@@ -1,0 +1,21 @@
+Thread Synchronization
+Prevents multiple threads from accessing shared resources at the same time (avoids race conditions).
+
+Synchronized Method
+class Counter {
+    int count = 0;
+
+    synchronized void increment() {
+        count++;
+    }
+}
+
+
+
+ 
+ 
+ 
+ Synchronized Block
+ synchronized(obj) {
+   // critical section
+}
