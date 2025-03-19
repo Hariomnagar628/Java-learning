@@ -18,7 +18,7 @@ public class Intermediateoperations {
 
         // 1. Filter
 
-        List<String>list = Arrays.asList("Akshit","Ram","Shyam","Ghanshyam");
+        List<String>list = Arrays.asList("Akshit","Ram","Shyam","Ghanshyam","Akshit");
          Stream<String>filteredstream= list.stream().filter(x->x.startsWith("A"));
           
          // no filtering at this point 
@@ -33,15 +33,30 @@ public class Intermediateoperations {
         Stream<String>newlist =  list.stream().map(x->x.toUpperCase());
         newlist.forEach(System.out::println);
 
-        // sorted
+        // 3. sorted
         // sorted in natural ordering 
         Stream<String>sortedstream=list.stream().sorted();
-        sortedstream.forEach(System.out::println);
+        
+        // by giving comparator 
+        Stream<String>sortedstreamusingcomparator=list.stream().sorted((x,y)->x.length()-y.length());
+        
+
+        sortedstream.forEach(System.out::println); 
 
     
-           
+
+        // 4. distinct 
+        
+        System.out.println(list.stream().filter(x->x.startsWith("A")).distinct().count());
 
 
+
+          // 5. limit
+         
+          System.out.println(Stream.iterate(1, x->x+1).limit(100).count());  
+
+          // 6.skip
+          System.out.println(Stream.iterate(1, x->x+1).skip(10).limit(100).count());
 
 
     }
