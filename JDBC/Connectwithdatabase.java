@@ -43,13 +43,10 @@ public class Connectwithdatabase {
             System.out.println("name : " + name);
             System.out.println("subject : " + subject);
             System.out.println("age : " + age);
+            System.out.println();
 
 
         }
-
-
-
-
 
       }catch(SQLException e)
       {
