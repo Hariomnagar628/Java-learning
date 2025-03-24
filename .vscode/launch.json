@@ -6,6 +6,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Preparedstatement2",
+            "request": "launch",
+            "mainClass": "JDBC.Preparedstatement2",
+            "projectName": "Javalearning_c536db00"
+        },
+        {
+            "type": "java",
+            "name": "Preparedstatement1",
+            "request": "launch",
+            "mainClass": "JDBC.Preparedstatement1",
+            "projectName": "Javalearning_c536db00"
+        },
+        {
+            "type": "java",
+            "name": "Preparedstatement",
+            "request": "launch",
+            "mainClass": "JDBC.Preparedstatement",
+            "projectName": "Javalearning_c536db00"
+        },
+        {
+            "type": "java",
+            "name": "InsertDataintodatabase",
+            "request": "launch",
+            "mainClass": "JDBC.InsertDataintodatabase",
+            "projectName": "Javalearning_c536db00"
+        },
+        {
+            "type": "java",
             "name": "Connectwithdatabase",
             "request": "launch",
             "mainClass": "JDBC.Connectwithdatabase",
