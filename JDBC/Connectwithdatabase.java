@@ -11,8 +11,18 @@ public class Connectwithdatabase {
 
 
     public static void main(String[] args) {
-        
-      try{
+     
+      
+      // 🔸 Newer versions (Java 6 and later):
+      // ✅ No, it's not required anymore (in most cases) if the MySQL JDBC driver JAR is present in your classpath.
+      
+      // Because:
+      
+      // mysql-connector-java uses Java’s Service Provider Mechanism, which auto-registers the driver class (com.mysql.cj.jdbc.Driver) when the application starts.
+      
+      // So even if you remove that Class.forName(...) line, your code will still work in modern setups.
+      
+            try{
 
         Class.forName("com.mysql.cj.jdbc.Driver");
         
