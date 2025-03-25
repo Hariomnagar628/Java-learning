@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Batchprocessing",
+            "request": "launch",
+            "mainClass": "JDBC.Batchprocessing",
+            "projectName": "Javalearning_c536db00"
+        },
+        {
+            "type": "java",
             "name": "Preparedstatement2",
             "request": "launch",
             "mainClass": "JDBC.Preparedstatement2",
